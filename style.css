@@ -71,7 +71,7 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    background: url("./img/close.svg");
+    background: url("/./img/close.svg");
     background-size: cover;
     right: 12px;
     top: 10px;
