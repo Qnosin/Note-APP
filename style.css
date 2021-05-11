@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    color: #000;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.header h2:hover {
+    cursor: pointer;
+    transition: 1s ease all;
+    background-color: #000;
+    color: #fff;
+    padding: .6rem;
+    border-radius: 10px;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notes {
+    width: 300px;
+    min-height: 400px;
+    position: relative;
+    background-color: #ffff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.notes-place {
+    width: 95%;
+    min-height: 370px;
+    resize: none;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #ffff88;
+    font-weight: bold;
+    text-align: start;
+    overflow: hidden;
+}
+
+.notes-place:focus {
+    outline: 0;
+}
+
+.exit-btn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url('/close.svg');
+    background-size: cover;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:425px) {
+    .notes-place {
+        min-height: 370px;
+    }
+    .notes {
+        min-height: 400px;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width:828px) {
+    .notes-place {
+        min-height: 370px;
+    }
+    .notes {
+        min-height: 400px;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width:830px) {
+    .notes-place {
+        min-height: 365px;
+    }
+    .notes {
+        min-height: 400px;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width:1251px) {
+    .notes-place {
+        min-height: 465px;
+    }
+    .notes {
+        min-height: 500px;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width:1661px) {
+    .notes-place {
+        min-height: 460px;
+    }
+    .notes {
+        min-height: 500px;
+        align-items: flex-end;
+    }
+}
